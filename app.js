@@ -465,22 +465,22 @@ function draw () {
   // background(20,90,100);
   // textAlign(CENTER,CENTER);
   push();
+  textFont('Carter One');
   textSize(28);
   textAlign(CENTER);
   fill(202, 174, 252);
   stroke(100, 23, 252);
   strokeWeight(3);
-  textFont('Carter One');
   text('Assignment 4.2 - Draw A p5 Chart', 0, 40, width, 100);
   pop();
-  
+ 
   push();
+  textFont('Nunito');
   textSize(18);
   textAlign(CENTER);
   fill(100, 23, 252);
   stroke(202, 174, 252);
   strokeWeight(2);
-  textFont('Nunito');
   textStyle(BOLDITALIC);
   text('Rotten Tomatoes Ratings', 0, 80, width, 100);
   pop();
