@@ -1,4 +1,4 @@
- /*global p5.js*/
+ /*global p5 */
  //when using horizontal textAlign, set x value to 0//
  
 var myData = [
@@ -474,6 +474,7 @@ function draw () {
   text('Assignment 4.2 - Draw A p5 Chart', 0, 40, width, 100);
   pop();
  
+ 
   push();
   textFont('Nunito');
   textSize(18);
@@ -499,9 +500,10 @@ function draw () {
   
   //draw tick marks
     push();
+    textFont('Nunito');
     // textAlign(LEFT);
     fill(202, 174, 252);
-    textFont('Nunito');
+  
     textSize(10);
     text((100-i*10)+'%', x-10, height-80);
     pop();
@@ -520,11 +522,11 @@ function draw () {
     
     push();
     fill(148, 92, 250);
+    textFont('Nunito');
     noStroke();
     translate(0, i *(barWidth+barMargin));
     rect(290,150,myData[i].rt_score*5,barWidth);
     fill(255);
-    textFont('Nunito');
     textStyle(BOLDITALIC);
     text(myData[i].title + ' (' + myData[i].release_date + ')',50,155,width);
     text(myData[i].rt_score + '%',255+myData[i].rt_score*5,155,width);
